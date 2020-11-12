@@ -9,6 +9,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: url(../pics/tontons.jpg) no-repeat;
     background-size: cover;
+    
 }
 
 /* WRAPPER */
@@ -91,4 +92,51 @@ transition: all .5s ease-in-out;
     background-color: maroon;
     border:  .1rem groove  cornsilk;
     color: cornsilk;
+}
+
+/* Section Image */
+
+#emps{
+    display: flex !important;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10%;
+    padding-left: 20px;
+   
+}
+
+
+.clsimg{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    float: left;
+    /*padding: 10px 10px;*/
+    border: solid 10px;
+    margin: 10px;
+    
+}
+.filles{
+    border-color: pink;
+}
+.garcon{
+    border-color: blue;
+}
+figure figcaption{
+    text-align: center;
+}
+
+.clsimg:hover{
+    border:black solid 10px;
+    
+    /*height: calc(200px*1.1);*/
+    transition:all ease-in-out 1.3s;
+    
+}
+
+img.filles:hover{
+    transform: scale(1.1) rotate(-750deg);
+}
+img.garcon:hover{
+    transform: scale(1.1) rotate(750deg);
 }
