@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#salary").change(function() {
+                $("#valsal").text($("#salary").val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <main id="wrapper">
+        <h1>Formulaire d'inscription</h1>
+        <form action="check.php" method="POST" name="register" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Identité</legend>
+                <div class="row">
+                    <div class="left"><label for="fname">Prenom:</label></div>
+                    <div class="right"><input type="text" maxlength="30" name="fname" id="fname" placeholder="Prénom usuel" required pattern="[a-zA-Zéçàù\-\? ]{3,30}"></div>
+                </div>
+                <div class="row">
+                    <div class="left"><label for="dob">Date de naissance : </label></div>
+                    <div class="right"><input type="date" name="dob" id="dob"></div>
+                </div>
+
+                <div class="row">
+                    <div class="left">
+                        <label for="mail">Courriel :</label></div>
+                    <div class="right"><input type="email" name="mail" id="mail"></div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="site">Site Web perso : </label></div>
+                    <div class="right"><input type="url" name="site" id="site"></div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="phone">Télephone : </label></div>
+                    <div class="right"><input type="tel" name="phone" id="phone" placeholder="0XXXXXXXX"></div>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label for="land">Pays : </label></div>
+                    <div class="right"><select name="land" id="land">
+                            <optgroup label="Europe">
+                                <option value="IT">Italie</option>
+                                <option value="GR">Gréce</option>
+                                <option value="DE" selected>Allemange</option>
+                            </optgroup>
+                            <optgroup label="Afrique">
+                                <option value="Al">Alégerie</option>
+                                <option value="sl">Afrique de sud</option>
+                            </optgroup>
+                        </select></div>
+                </div>
+
+                <fieldset>
+                    <legend>Sexe</legend>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">Masculin</label>
+                    <input type="radio" name="gender" id="female" value="female"><label for="female">Féminin</label>
+                    <input type="radio" name="gender" id="neutre" value="neutre"><label for="neutre">Neutre</label>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <legend>Compétences</legend>
+                <div class="row">
+                    <div class="left"> <label for="exp">Expérience : </label></div>
+                    <div class="right"><input type="number" id="exp" min="5" max="35" step="2"></div>
+                </div>
+
+                <div class="row">
+                    <div class="left"> <label for="pref">Langage fort :</label></div>
+                    <div class="right"><input type="text" name="pref" id="pref" list="languages">
+                        <datalist id="languages">
+                            <option value="Java">
+                            <option value="php">
+                            <option value="C#">
+                            <option value="Python">
+                            <option value="COBOL">
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left"> <label for="area">Mobilité :</label></div>
+                    <div class="right"><select name="area[]" id="area" size="5" multiple>
+                            <option value="FR1">Paris</option>
+                            <option value="IT1">Bergame</option>
+                            <option value="GR1">Athénes</option>
+                            <option value="DE1">Dortmund</option>
+                            <option value="DZ1">Blida</option>
+                            <option value="CT1">Abidjan</option>
+                            <option value="ZA1">Durban</option>
+                            <option value="DE2">Berlin</option>
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="left"><label for="test">Test Couleur :</label></div>
+                    <div class="right"><input type="color" name="test" id="test"></div>
+                </div>
+                <div class="row">
+                    <div class="left">curriculum vitae : </label>
+                    </div>
+                    <div class="right"> <input type="file" name="cv" id="cv" accept=".pdf,.doc,.docx,.odt">
+                        <input type="hidden" name="max_file_size" value="3145728">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prétentions salariales</legend>
+                <div class="row">
+                    <div class="left"><label for="salary">Salaire</label></div>
+                    <div class="right"><input type="range" name="salary" id="salary" min="2500" max="8000" step="100" value="3100">
+                        <output id="valsal"></output>
+                    </div>
+                </div>
+                <fieldset>
+                    <legend>statut</legend>
+                    <input type="checkbox" name="status[]" id="jr" value="Junior">
+                    <label for="jr">Dév. Junior</label>
+
+
+
+                    <input type="checkbox" name="status[]" id="jr" value="Senior">
+                    <label for="sr">Dév. Senior</label>
+
+                    <input type="checkbox" name="status[]" id="cp" value="chef de projects">
+                    <label for="cp">chef de projects</label>
+                </fieldset>
+
+                <div class="row">
+                    <div class="left"><label for="txtremarks">Remarques :</label></div>
+                    <div class="right">
+                        <textarea name="txtremarks" id="txtremarks" cols="30" rows="10"></textarea>
+                    </div>
+
+                </div>
+                <div style="text-align: center;width: 100%;">
+                    <input type="submit" value="Postuler">
+                    <input type="reset" value="Tout effacer">
+
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+
+</html>
