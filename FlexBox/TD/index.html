@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Flex - TD</title>
+    <style>
+        * {
+            border: 1px solid red;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        body>* {
+            flex: 1 1 0rem;
+        }
+        
+        body>header,
+        footer {
+            flex-basis: 100%;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 20vh;
+            width: 100%;
+        }
+        
+        header>* {
+            flex-basis: 6em;
+        }
+        
+        section {
+            display: flex;
+            /* justify-content: space-between; */
+            /* height: 800px; */
+            flex-direction: row;
+            /*align-items: center;*/
+            /* overflow: auto; */
+        }
+        
+        section>* {
+            flex: 1 1 0rem;
+        }
+        
+        section>nav {
+            flex-grow: 15;
+        }
+        
+        section>main {
+            flex-grow: 60;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /*align-items: space-between;*/
+        }
+        
+        section>aside {
+            flex-grow: 25;
+        }
+        
+        footer {
+            text-align: center;
+            height: 5vh;
+        }
+        
+        main>div {
+            width: 18vw;
+            margin: 1vh;
+            /* height: 10vh; */
+        }
+        
+        div img {
+            max-width: 100%;
+            max-height: 100%;
+            min-width: 100%;
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>log</div>
+        <h1>titre</h1>
+        <div>Connection</div>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Notre équipe</a></li>
+                <li><a href="#">Inscription</a></li>
+                <li><a href="#">Réalisation</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile1.jpg" alt="img1">
+                    <figcaption>Emp 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile2.jpg" alt="img2">
+                    <figcaption>Emp 2</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile3.jpg" alt="img3">
+                    <figcaption>Emp 3</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile4.jpg" alt="img3">
+                    <figcaption>Emp 4</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile5.jpg" alt="img3">
+                    <figcaption>Emp 5</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile6.jpg" alt="img3">
+                    <figcaption>Emp 6</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile7.jpg" alt="img3">
+                    <figcaption>Emp 7</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile8.jpg" alt="img3">
+                    <figcaption>Emp 8</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile9.jpg" alt="img3">
+                    <figcaption>Emp 9</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../../cp2/pics/profile10.jpg" alt="img3">
+                    <figcaption>Emp 10</figcaption>
+                </figure>
+            </div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, fugiat laudantium! Pariatur, consectetur harum. Veniam perspiciatis aspernatur inventore optio itaque quod placeat, suscipit omnis, sunt fuga deleniti consequuntur dolorum
+                ipsum.Assumenda pariatur accusantium tenetur qui ut quaerat nobis! Libero hic sint tempora placeat, soluta qui consequuntur dolorem, omnis quo unde nihil assumenda laboriosam, quasi dignissimos incidunt suscipit debitis illo. Distinctio.</div>
+        </main>
+        <aside>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ducimus animi excepturi voluptatibus nisi voluptatem est, suscipit tempora. Quo nam pariatur ab neque laboriosam libero officiis nihil, explicabo minima recusandae.Quibusdam quos suscipit
+            ratione illo veritatis quisquam et doloremque quod aliquid, quaerat assumenda, doloribus voluptatem, molestias consequatur maxime dolor rerum fugit sunt blanditiis facilis. Minus impedit deserunt quasi maxime ullam?
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; FlexBox - TR</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=he, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid red;
+            height: 100%;
+        }
+        
+        body>* {
+            border: 1px solid green;
+            flex: 1 1 20vh;
+        }
+        
+        main {
+            flex: 3 2 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+
+</html>

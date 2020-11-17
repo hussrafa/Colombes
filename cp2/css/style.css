@@ -1,80 +1,75 @@
-body{
-    padding:  2px 2px 2px 2px;
+body {
+    padding: 2px 2px 2px 2px;
     background-color: blanchedalmond;
-    background: url(../pics/sun.png) no-repeat top right,
-     url(../pics/plane.png) no-repeat bottom right,
-     radial-gradient(bisque,cornsilk,white),
-     linear-gradient(to right,bisque,yellow,orange); 
-     margin-bottom: 150px;
+    background: url(../pics/sun.png) no-repeat top right, url(../pics/plane.png) no-repeat bottom right, radial-gradient(bisque, cornsilk, white), linear-gradient(to right, bisque, yellow, orange);
+    margin-bottom: 150px;
 }
-
-
 
 table {
-
-width: 100%;
-padding: 2px 2px 2px 2px;
-/* box-shadow: 5px 5px 10px blue, -4px -4px 8px red; */
+    width: 100%;
+    padding: 2px 2px 2px 2px;
+    /* box-shadow: 5px 5px 10px blue, -4px -4px 8px red; */
 }
 
-table,th,td{
+table,
+th,
+td {
     border: black 1px solid;
 }
 
-thead,tfoot{
+thead,
+tfoot {
     background-color: darkgray;
     color: white;
 }
 
-pre{
+pre {
     color: darkblue;
 }
 
-tbody tr:nth-child(even){
-background-color: moccasin;
+tbody tr:nth-child(even) {
+    background-color: moccasin;
 }
 
-tbody tr:hover{
+tbody tr:hover {
     background-color: gold;
     cursor: pointer;
 }
 
-table thead tr:hover{
+table thead tr:hover {
     color: black;
-
 }
 
-#Table1 tbody tr :last-child{
+#Table1 tbody tr :last-child {
     text-align: right;
 }
 
-thead tr :nth-child(2), tbody tr :nth-child(2){
+thead tr :nth-child(2),
+tbody tr :nth-child(2) {
     text-align: center;
 }
 
-figure img{
+figure img {
     border-radius: 50%;
     border-radius: 2em 3em 4em 5em;
     border-radius: 50% 20% / 10% 40%;
-    box-shadow: 5px 5px 7.5px black , -5px -5px 7.5px gray;
+    box-shadow: 5px 5px 7.5px black, -5px -5px 7.5px gray;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
-h1{
+h1 {
     color: red;
 }
 
-#top{
-
+#top {
     text-shadow: 0 0 10px orange;
-    
-}
-ol ol{
-   list-style-type: lower-roman;
-   
 }
 
-ul li{
-list-style-image: url(../pics/icons8-japanese-bullet-train-16.png);
+ol ol {
+    list-style-type: lower-roman;
 }
 
+ul li {
+    list-style-image: url(../pics/icons8-japanese-bullet-train-16.png);
+}

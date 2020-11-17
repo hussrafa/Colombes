@@ -1,0 +1,6 @@
+@import url(mobile.css) screen and (max-width: 968px);
+@media screen and (min-width: 967px) {
+    body {
+        background-color: #0f0;
+    }
+}
