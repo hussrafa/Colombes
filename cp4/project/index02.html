@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/index02.js" defer></script>
+    <style>
+        .myDiv {
+            display: inline-block;
+            width: 240px;
+            height: 180px;
+            background-color: cadetblue;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        
+        @keyframes move {
+            0% {
+                left: 0%
+            }
+            50% {
+                right: 100%;
+            }
+        }
+        
+        #textcontainer {
+            animation-name: move;
+            animation-delay: 0.3ms;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="myDiv">DIV N°1</div>
+        <div class="myDiv">DIV N°2</div>
+        <div class="myDiv">DIV N°3</div>
+        <div class="myDiv">DIV N°4</div>
+    </div>
+    <div id="textcontainer">
+        un text
+    </div>
+
+</html>

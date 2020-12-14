@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.myDiv {
+    display: inline-block;
+    width: 240px;
+    height: 180px;
+    background-color: cadetblue;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.myDiv p {
+    font-size: 1.4em;
+    font-weight: lighter;
+    color: oldlace;
+}
+
+.divNoire {
+    background-color: black;
+    height: 20px;
+    color: #ffffff;
+    font-size: 1.4em;
+}

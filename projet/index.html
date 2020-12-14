@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <!--  Pour les composants  jQuery-->
+    <link rel="stylesheet" href="/dist/css/jquery-ui.css" />
+    <!--  si j'ai choisi un theme specifique-->
+    <link rel="stylesheet" href="/dist/css/jquery-ui.theme.css" />
+    <link rel="stylesheet" href="/dist/css/jquery-ui.structure.css">
+    <!--  Ma feuille de sytle perso-->
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <!--  Le core de jQuery-->
+    <script src="/dist/js/jquery.min.js"></script>
+    <!--  Le code JS des composants-->
+    <script src="/dist/js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myconteneur").tabs();
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="myconteneur">
+        <ul>
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#Presentation">Presentation</a></li>
+            <li><a href="#Equipe">Equipe</a></li>
+            <li><a href="#metier">Notre metier</a></li>
+        </ul>
+        <section id="Accueil">
+            <p>Accueil - Proinmorbi tin elit arcu, rutrum commodo, vehicula te</p>
+        </section>
+        <section id="Presentation">
+            <p>Presentation - cidunt, dui sit amet facilisis</p>
+        </section>
+        <section id="Equipe">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repudiandae dicta sint minus fuga amet rerum, eligendi reiciendis illum culpa, reprehenderit delectus? Quas harum itaque repellat quod fugit iusto labore?
+            </p>
+        </section>
+        <section id="metier">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>

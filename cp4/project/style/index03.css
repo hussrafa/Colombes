@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    font-family: monospace;
+    background-color: aqua;
+    color: blue;
+    overflow: hidden;
+    word-wrap: none;
+}
+
+h1 {
+    font-family: 'pacifico', cursive;
+    font-size: 5em;
+    font-weight: bold;
+    color: blue;
+    top: 20px;
+    overflow: hidden;
+    word-wrap: none;
+}
