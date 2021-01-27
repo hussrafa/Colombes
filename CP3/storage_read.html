@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darons Codeurs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <script src="ajax.js" defer></script> -->
+    <script src="storage_read.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Stockage local</h1>
+            <p class="lead">Lecture</p>
+        </div>
+
+        <h2>Cookies</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Valeur</th>
+                </tr>
+            </thead>
+            <tbody id="tb">
+
+            </tbody>
+        </table>
+        <input type="button" value="cookie" id="readCookie" class="btn btn-primary">
+        <h2>Web Stroage</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>clé</th>
+                    <th>valeur</th>
+                </tr>
+            </thead>
+            <tbody id="tblLocal">
+
+            </tbody>
+
+        </table>
+        <input type="button" value="ReadLocal" class="btn btn-warning" id="ReadLocal">
+        <h2>IndexedDB</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>clé</th>
+                    <th>valeur</th>
+                </tr>
+            </thead>
+            <tbody id="tblIndexeed">
+
+            </tbody>
+
+        </table>
+        <input type="button" value="ReadIndexed" class="btn btn-danger" id="ReadIndexed">
+    </div>
+</body>
+
+</html>

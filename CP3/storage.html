@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darons Codeurs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="ajax.js" defer></script>
+    <script src="storage_cookie.js" defer></script>
+    <script src="storage_indexeddb.js" defer></script>
+    <script src="storage_web.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Stockage local</h1>
+            <p class="lead">Ecriture</p>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="text-align: center;"
+            id="cAlert">
+            <strong>Attention Cookies</strong> ce site contient des cookies.
+            <div style="text-align: center;">
+                <a href="#" class="btn btn-warning">Je me casse</a>
+                <a href="#" class="btn btn-success" id="jreste">Je reste</a>
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="dismiss">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <form action="showvalues.php" method="post">
+            <div class="form-group">
+                <label for="fname">Prènom</label>
+                <input type="text" name="fname" id="fname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="land">Pays</label>
+                <select name="land" id="land" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="CP">CP</label>
+                <input type="text" name="CP" id="CP" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="Ville">Ville</label>
+                <input type="text" name="Ville" id="Ville" readonly="true" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" id="age" name="age" class="form-control" readonly>
+            </div>
+            <!-- <input type="submit" class="btn btn-primary"> -->
+            <input type="button" value="Cookie" id="saveCookie" class="btn btn-primary">
+            <input type="button" value="Localstorage" id="saveLocal" class="btn btn-warning">
+            <input type="button" value="IndexedDB" id="IndexedDB" class="btn btn-success">
+        </form>
+    </div>
+</body>
+
+</html>

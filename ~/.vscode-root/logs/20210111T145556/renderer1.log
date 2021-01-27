@@ -1,0 +1,1 @@
+[2021-01-11 14:56:07.989] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/var/www/html/Colombes/CP3/.vscode'

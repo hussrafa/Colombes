@@ -1,0 +1,259 @@
+Looking for git in: git
+Using git 2.25.1 from git
+> git rev-parse --git-dir
+Open repository: /var/www/html/Colombes
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :CP3/team.js
+> git ls-files --stage -- /var/www/html/Colombes/CP3/team.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :CP3/ajax.html
+> git ls-files --stage -- /var/www/html/Colombes/CP3/ajax.html
+> git show --textconv :CP3/ajax.js
+> git ls-files --stage -- /var/www/html/Colombes/CP3/ajax.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse Colombes
+> git rev-parse --symbolic-full-name Colombes@{u}
+> git rev-list --left-right Colombes...refs/remotes/Colombes/Colombes
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /var/www/html/Colombes/CP3/ajax.js
+> git show --textconv :CP3/team.html
+> git ls-files --stage -- /var/www/html/Colombes/CP3/team.html
+> git show --textconv :CP3/team.js
+> git ls-files --stage -- /var/www/html/Colombes/CP3/team.js
+> git show --textconv :CP3/ajax.js
+> git ls-files --stage -- /var/www/html/Colombes/CP3/ajax.js

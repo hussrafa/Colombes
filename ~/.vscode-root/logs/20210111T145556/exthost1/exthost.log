@@ -1,0 +1,74 @@
+[2021-01-11 14:55:57.662] [exthost] [info] extension host started
+[2021-01-11 14:55:57.679] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-01-11 14:55:57.679] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-01-11 14:55:57.689] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-01-11 14:55:57.689] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-01-11 14:55:57.690] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2021-01-11 14:55:57.690] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-01-11 14:55:57.706] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-11 14:55:57.706] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/git/dist/main
+[2021-01-11 14:55:57.729] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2021-01-11 14:55:57.729] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-01-11 14:55:57.731] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2021-01-11 14:55:57.731] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2021-01-11 14:55:57.759] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-11 14:55:57.760] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/github/dist/extension.js
+[2021-01-11 14:55:57.777] [exthost] [info] eager extensions activated
+[2021-01-11 14:55:57.777] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-01-11 14:55:57.777] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-01-11 14:55:57.875] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-01-11 14:55:57.875] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2021-01-11 14:56:08.303] [exthost] [info] extension host started
+[2021-01-11 14:56:08.319] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-01-11 14:56:08.319] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-01-11 14:56:08.328] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-01-11 14:56:08.328] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-01-11 14:56:08.329] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2021-01-11 14:56:08.329] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-01-11 14:56:08.345] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-11 14:56:08.345] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/git/dist/main
+[2021-01-11 14:56:08.353] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2021-01-11 14:56:08.353] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-01-11 14:56:08.354] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2021-01-11 14:56:08.354] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2021-01-11 14:56:08.384] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-01-11 14:56:08.384] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/github/dist/extension.js
+[2021-01-11 14:56:08.406] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-01-11 14:56:08.407] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-01-11 14:56:08.443] [exthost] [info] eager extensions activated
+[2021-01-11 14:56:08.540] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-01-11 14:56:08.540] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/github-authentication/dist/extension.js
+[2021-01-11 14:56:09.340] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:javascript"}
+[2021-01-11 14:56:09.340] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2021-01-11 14:56:11.618] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2021-01-11 14:56:11.618] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/html-language-features/client/dist/node/htmlClientMain
+[2021-01-11 14:56:28.638] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:typescript"}
+[2021-01-11 14:56:28.638] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/52/usr/share/code/resources/app/extensions/extension-editing/dist/extensionEditingMain
+[2021-01-11 14:56:48.470] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 14:57:30.916] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 14:58:02.254] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 14:58:35.364] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 14:59:19.269] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 14:59:25.279] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 14:59:52.397] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:00:03.134] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:00:13.433] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:00:31.650] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:01:48.462] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:02:22.688] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:02:34.407] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:03:08.973] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:03:14.668] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:03:24.814] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:03:33.726] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:03:47.710] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:04:05.780] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:04:59.498] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:05:29.002] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:07:08.676] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:07:14.594] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:08:06.194] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:21:38.403] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-11 15:22:11.639] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-12 08:49:18.696] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
+[2021-01-12 08:51:48.798] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 330
