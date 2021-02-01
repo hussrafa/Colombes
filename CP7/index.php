@@ -15,6 +15,13 @@
 
 <body>
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page">
+                    Accueil </li>
+                <li class="breadcrumb-item active"><a href="edit_cat_form.php">Catégories</a></li>
+            </ol>
+        </nav>
         <div class="jumbotron">
             <h1 class="display-4">Hello, world!</h1>
             <p class="lead">Projet fil rouge en HTML, CSS, JS, PHP et MySQL basé sur le jeu de donées Northwind</p>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Edition des catégories</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Catégories</li>
+            </ol>
+        </nav>
+
+        <form action="edit_cat_proc.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="CODE_CATEGORIE">code catégorie : </label>
+                <input type="number" name="CODE_CATEGORIE" id="CODE_CATEGORIE" class="form-control" pattern="[0-9]{1,6}" require>
+            </div>
+            <div class="form-group">
+                <label for="NOM_CATEGORIE">Nom catégorie : </label>
+                <input type="text" name="NOM_CATEGORIE" id="NOM_CATEGORIE" class="form-control" require>
+            </div>
+            <div class="form-group">
+                <label for="DESCRIPTION">DESCRIPTION : </label>
+                <textarea name="DESCRIPTION" id="DESCRIPTION" cols="121" rows="10" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="PHOTO">PHOTO : </label>
+                <input type="file" name="PHOTO" id="PHOTO" class="form-control" accept=".jpeg,.gif,.jpg,.png,.webp">
+                <input type="hidden" name="MAX_FILE_SIZE" value="102400">
+            </div>
+            <div class="form-group">
+                <div style="text-align: left;">
+                    <input type="submit" value="btnsubmit" value="Submit" class="btn btn-success">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
