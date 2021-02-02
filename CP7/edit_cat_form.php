@@ -18,18 +18,19 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.php">Accueil</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Catégories</li>
+                <li class="breadcrumb-item"><a href="edit_cat_list.php">Liste des catégories</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Edition Catégories</li>
             </ol>
         </nav>
 
         <form action="edit_cat_proc.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="CODE_CATEGORIE">code catégorie : </label>
-                <input type="number" name="CODE_CATEGORIE" id="CODE_CATEGORIE" class="form-control" pattern="[0-9]{1,6}" require>
+                <input type="number" name="CODE_CATEGORIE" id="CODE_CATEGORIE" class="form-control" pattern="[0-9]{1,6}" required>
             </div>
             <div class="form-group">
                 <label for="NOM_CATEGORIE">Nom catégorie : </label>
-                <input type="text" name="NOM_CATEGORIE" id="NOM_CATEGORIE" class="form-control" require>
+                <input type="text" name="NOM_CATEGORIE" id="NOM_CATEGORIE" class="form-control" required pattern="[A-Za-z '\-]{1,25}">
             </div>
             <div class="form-group">
                 <label for="DESCRIPTION">DESCRIPTION : </label>
@@ -38,7 +39,7 @@
             <div class="form-group">
                 <label for="PHOTO">PHOTO : </label>
                 <input type="file" name="PHOTO" id="PHOTO" class="form-control" accept=".jpeg,.gif,.jpg,.png,.webp">
-                <input type="hidden" name="MAX_FILE_SIZE" value="102400">
+                <input type="hidden" name="MAX_FILE_SIZE" value="512000">
             </div>
             <div class="form-group">
                 <div style="text-align: left;">
