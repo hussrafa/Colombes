@@ -1,3 +1,13 @@
+<?php
+// Ouvre la BDD en MYSQLI
+$conn = mysqli_connect("localhost", "root", "greta", "northwind");
+if (!$conn) {
+    echo "<p>Error connection Mysql : " . mysqli_connect_error() . "</p>";
+    die();
+}
+$qryToExecute = "select table_name,table_rows from information_schema.tables where table_schema='northwind'";
+$res = mysqli_query($conn, $qryToExecute);
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -64,8 +74,28 @@
             echo "</div>";
             ?>
         </section>
+        <div id="io">
+            <h2>Back_office</h2>
+            <?php
+            $html = '';
+            if ($res) {
+                while ($row = mysqli_fetch_array($res)) {
+                    $html .= "<div class='row m-3'><a href=" . $row["TABLE_NAME"] . ".php target='_blank'><button type='button' class='btn btn-primary'>" . $row["TABLE_NAME"] . " <span class='badge badge-light'>" . $row["TABLE_ROWS"] . "</span></button></a></div>";
+                }
+                echo $html;
+            }
+            mysqli_close($conn);
+            ?>
+        </div>
         <!-- <img src="..." class="card-img-top" alt="..."> -->
     </div>
 </body>
 
 </html>
+
+<style>
+.myClass{
+margin: 10px;
+
+}
+</style>

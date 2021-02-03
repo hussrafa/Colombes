@@ -48,7 +48,7 @@ $res = mysqli_query($conn, $qryToExecute);
                 $html = '';
                 if ($res) {
                     while ($row = mysqli_fetch_array($res)) {
-                        $html .= "<tr><td><a target='_blank' style='color:#fff;' href=edit_cat_form.php?id=" . $row["CODE_CATEGORIE"] . ">{$row["CODE_CATEGORIE"]}</a></td>";
+                        $html .= "<tr><td><a target='_blank' style='color:#fff;' href=edit_cat_form.php?k=" . $row["CODE_CATEGORIE"] . ">{$row["CODE_CATEGORIE"]}</a></td>";
                         $html .= "<td>{$row["NOM_CATEGORIE"]}</td>";
                         $html .= "<td>{$row["DESCRIPTION"]}</td>";
                         $html .= '<td><img style="width:150px;" src="' . $row["PHOTO"] . '"/></td></tr>';
