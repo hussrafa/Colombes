@@ -1,3 +1,24 @@
+<?php
+if (isset($_GET["k"]) && !empty($_GET["k"])) {
+    $flag = false;
+    $conn = mysqli_connect("localhost", "root", "greta", "northwind");
+    if (!$conn) {
+        echo "<p>Error connection Mysql : " . mysqli_connect_error() . "</p>";
+        die();
+    }
+    $qryToExecute = "select * from categories where CODE_CATEGORIE=" . $_GET["k"] . "";
+    $res = mysqli_query($conn, $qryToExecute);
+    if ($res) {
+        $row =  mysqli_fetch_array($res);
+        if ($row !== null) {
+            $catCode = $row["CODE_CATEGORIE"];
+            $nomCat = $row["NOM_CATEGORIE"];
+            $desc = $row["DESCRIPTION"];
+            $flag = true;
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,28 +43,28 @@
                 <li class="breadcrumb-item active" aria-current="page">Edition Catégories</li>
             </ol>
         </nav>
-
-        <form action="edit_cat_proc.php" method="post" enctype="multipart/form-data">
+        <form action="edit_cat_proc.php<?php echo ($_SERVER['QUERY_STRING'] ? '?' . $_SERVER['QUERY_STRING'] : "") ?>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="CODE_CATEGORIE">code catégorie : </label>
-                <input type="number" name="CODE_CATEGORIE" id="CODE_CATEGORIE" class="form-control" pattern="[0-9]{1,6}" required>
+                <input type="number" name="CODE_CATEGORIE" value="<?php echo (isset($_GET["k"]) && !empty($_GET["k"]) && $flag) ? ($catCode) : "" ?>" id="CODE_CATEGORIE" class="form-control" pattern="[0-9]{1,6}" required>
             </div>
             <div class="form-group">
                 <label for="NOM_CATEGORIE">Nom catégorie : </label>
-                <input type="text" name="NOM_CATEGORIE" id="NOM_CATEGORIE" class="form-control" required pattern="[A-Za-z '\-]{1,25}">
+                <input type="text" name="NOM_CATEGORIE" id="NOM_CATEGORIE" value="<?php echo (isset($_GET["k"]) && !empty($_GET["k"]) && $flag) ? ($nomCat) : "" ?>" class="form-control" required pattern="[A-Za-z '\-]{1,25}">
             </div>
             <div class="form-group">
                 <label for="DESCRIPTION">DESCRIPTION : </label>
-                <textarea name="DESCRIPTION" id="DESCRIPTION" cols="121" rows="10" class="form-control"></textarea>
+                <textarea name="DESCRIPTION" id="DESCRIPTION" cols="121" rows="10" class="form-control"><?php echo (isset($_GET["k"]) && !empty($_GET["k"]) && $flag) ? ($desc) : "" ?></textarea>
             </div>
-            <div class="form-group">
+            <div class=" form-group">
                 <label for="PHOTO">PHOTO : </label>
                 <input type="file" name="PHOTO" id="PHOTO" class="form-control" accept=".jpeg,.gif,.jpg,.png,.webp">
                 <input type="hidden" name="MAX_FILE_SIZE" value="512000">
             </div>
             <div class="form-group">
                 <div style="text-align: left;">
-                    <input type="submit" value="btnsubmit" value="Submit" class="btn btn-success">
+                    <input type="submit" value="<?php echo (isset($_GET["k"]) && !empty($_GET["k"]) && $flag) ? "update" : "submit" ?>" class="btn btn-success">
+                    <a href="edit_cat_list.php"><input class="btn btn-secondary" type="button" value="Back to list"></a>
                 </div>
             </div>
         </form>

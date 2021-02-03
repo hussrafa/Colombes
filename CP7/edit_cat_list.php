@@ -10,6 +10,7 @@ $res = mysqli_query($conn, $qryToExecute);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +21,7 @@ $res = mysqli_query($conn, $qryToExecute);
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>Liste des catégories</h1>
@@ -29,6 +31,9 @@ $res = mysqli_query($conn, $qryToExecute);
                 <li class="breadcrumb-item active" aria-current="page">Liste Catégories</li>
             </ol>
         </nav>
+        <div class="row classright">
+            <a href="edit_cat_form.php"><input type="button" class="btn btn-success" value="Addnew"></a>
+        </div>
         <table class="table table-stripped table-dark">
             <thead>
                 <tr>
@@ -62,4 +67,12 @@ $res = mysqli_query($conn, $qryToExecute);
 
     </div>
 </body>
+
 </html>
+<style>
+    .classright {
+        margin: 0;
+        float: right;
+        margin-bottom: 15px;
+    }
+</style>
