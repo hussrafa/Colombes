@@ -14,6 +14,7 @@ if (isset($_GET["k"]) && !empty($_GET["k"])) {
             $catCode = $row["CODE_CATEGORIE"];
             $nomCat = $row["NOM_CATEGORIE"];
             $desc = $row["DESCRIPTION"];
+            $photo = $row["PHOTO"];
             $flag = true;
         }
     }
@@ -50,7 +51,7 @@ if (isset($_GET["k"]) && !empty($_GET["k"])) {
             </div>
             <div class="form-group">
                 <label for="NOM_CATEGORIE">Nom catégorie : </label>
-                <input type="text" name="NOM_CATEGORIE" id="NOM_CATEGORIE" value="<?php echo (isset($_GET["k"]) && !empty($_GET["k"]) && $flag) ? ($nomCat) : "" ?>" class="form-control" required pattern="[A-Za-z '\-]{1,25}">
+                <input type="text" name="NOM_CATEGORIE" id="NOM_CATEGORIE" value="<?php echo (isset($_GET["k"]) && !empty($_GET["k"]) && $flag) ? ($nomCat) : "" ?>" class="form-control" required pattern="[A-Za-z\u00C0-\00FF '\-]{1,25}">
             </div>
             <div class="form-group">
                 <label for="DESCRIPTION">DESCRIPTION : </label>
@@ -60,6 +61,9 @@ if (isset($_GET["k"]) && !empty($_GET["k"])) {
                 <label for="PHOTO">PHOTO : </label>
                 <input type="file" name="PHOTO" id="PHOTO" class="form-control" accept=".jpeg,.gif,.jpg,.png,.webp">
                 <input type="hidden" name="MAX_FILE_SIZE" value="512000">
+            </div>
+            <div class=" form-group">
+                <input type="hidden" name="UPDATE_PHOTO" value="<?php echo (isset($_GET["k"]) && !empty($_GET["k"]) && $flag) ? ($photo) : "" ?>">
             </div>
             <div class="form-group">
                 <div style="text-align: left;">

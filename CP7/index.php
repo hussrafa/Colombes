@@ -40,7 +40,11 @@ $res = mysqli_query($conn, $qryToExecute);
             echo 'Développé par Hussain,Daron Coder depuis ".$diff." Jours.'; ?>
             <hr class="my-4">
             <p>Cliquer sur le buton ci-dessous pour accéder au back-office(user et mot de passe requis):</p>
-            <a class="btn btn-success btn-lg" href="#" role="button">Connexion</a>
+            <div class="row">
+                <a class="btn btn-success btn-lg m-1" href="login.php" role="button">Connexion</a>
+                <button class="btn btn-secondary btn-lg m-1" data-toggle="modal" data-target="#staticBackdrop" role="button">Register</button>
+            </div>
+
         </div>
         <?php include_once("menu.php"); ?>
         <h2>Members d'équipe</h2>
@@ -88,14 +92,75 @@ $res = mysqli_query($conn, $qryToExecute);
             ?>
         </div>
         <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header center">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="register.php" method="post" enctype="multipart/form-data">
+                            <div class="container">
+                                <div class="form-group">
+                                    <label for="fname">Name : </label>
+                                    <input type="text" name="fname" id="fname" placeholder="Name" class="form-control" pattern="[A-Za-z\U00C0-\U00FF -']{1,40}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mail">Mail : </label>
+                                    <input type="email" name="mail" id="mail" placeholder="eMail" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password : </label>
+                                    <input type="password" name="pwd" id="pwd" placeholder="Password" class="form-control" pattern="[A-Za-z0-9@$*!?]{8,}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwdCheck">Verfication Password : </label>
+                                    <input type="password" name="pwdCheck" id="pwdCheck" placeholder="Verfication Password" class="form-control" pattern="[A-Za-z0-9@$*!?]{8,}" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contry">Country</label>
+                                    <select name="country" id="country" class="form-control">
+                                        <?php
+
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <input type="submit" value="submit" class="btn btn-primary">
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </div>
+
+
+
 </body>
 
 </html>
 
 <style>
-.myClass{
-margin: 10px;
+    .myClass {
+        margin: 10px;
 
-}
+    }
+
+    .center {
+        text-align: center;
+    }
 </style>

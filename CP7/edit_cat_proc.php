@@ -9,6 +9,13 @@ foreach ($_POST as $key => $value) {
         $params[] = null;
     }
 }
+
+//Teste si UPDATE ou INSERT
+if (isset($_GET['k']) && !empty($_GET['k'])) {
+    $update = true;
+} else {
+    $update = false;
+}
 // Récupération de l'image a televerser
 //var_dump($_FILES);
 if (isset($_FILES['PHOTO']) && $_FILES['PHOTO']['error'] !== UPLOAD_ERR_NO_FILE) {
@@ -39,6 +46,10 @@ if (isset($_FILES['PHOTO']) && $_FILES['PHOTO']['error'] !== UPLOAD_ERR_NO_FILE)
         $bin64encode = 'data:' . $_FILES['PHOTO']['type'] . ';base64,' . base64_encode($bin);
         $params[3] = $bin64encode;
     }
+} else {
+    if ($update) {
+        $params[3] = $params[4];
+    }
 }
 //var_dump($params);
 //Connecxion a la BDD via MYSQLI
@@ -48,12 +59,7 @@ if (!$conn) {
     exit();
 }
 
-//Teste si UPDATE ou INSERT
-if (isset($_GET['k']) && !empty($_GET['k'])) {
-    $update = true;
-} else {
-    $update = false;
-}
+
 
 //prepration de la requete
 $qry = mysqli_stmt_init($conn);

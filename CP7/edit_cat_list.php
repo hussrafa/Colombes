@@ -1,11 +1,24 @@
 <?php
+// Récupére la page active
+$pg = 1;
+if (isset($_GET['pg']) && !empty($_GET['pg'])) {
+    $pg = (int)$_GET['pg'];
+}
+
+$nb = 5;
+//Récupere le nombre de lignes actif si existe
+if (isset($_GET['nb']) && !empty($_GET['nb'])) {
+    $nb = $_GET['nb'];
+}
+
 // Ouvre la BDD en MYSQLI
+$start = ($pg - 1) * $nb;
 $conn = mysqli_connect("localhost", "root", "greta", "northwind");
 if (!$conn) {
     echo "<p>Error connection Mysql : " . mysqli_connect_error() . "</p>";
     die();
 }
-$qryToExecute = "select * from categories";
+$qryToExecute = "select * from categories LIMIT {$start},{$nb}";
 $res = mysqli_query($conn, $qryToExecute);
 ?>
 <!DOCTYPE html>
@@ -64,6 +77,26 @@ $res = mysqli_query($conn, $qryToExecute);
                 ?>
             </tbody>
         </table>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <?php
+                //calcue et affiche la pagination
+                $TotalPages = 0;
+                $sresTotal = mysqli_query($conn, "select count(1) as total from categories");
+                $rowTotal = mysqli_fetch_array($sresTotal);
+                if ($rowTotal !== null) {
+                    $TotalPages = ceil($rowTotal["total"] / $nb);
+                }
+                for ($i = 1; $i <= $TotalPages; $i++) {
+                    $activeClass = ($i === $pg) ? "active" : "";
+                    $active = ($i === $pg) ? "<span class='sr-only'>(current)</span>" : "";
+                    echo "<li class='page-item " . $activeClass . "'><a class='page-link' href=" . $_SERVER['PHP_SELF'] . "?pg={$i}&nb={$nb}>{$i}{$active}</a></li>";
+                }
+
+                ?>
+            </ul>
+        </nav>
 
     </div>
 </body>
