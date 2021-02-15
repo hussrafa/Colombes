@@ -125,7 +125,13 @@ $res = mysqli_query($conn, $qryToExecute);
                                     <label for="contry">Country</label>
                                     <select name="country" id="country" class="form-control">
                                         <?php
-
+                                        // https://restcountries.eu/rest/v2/lang/en?fields=translations;alpha2Code;name
+                                        $json = file_get_contents('https://restcountries.eu/rest/v2?fields=translations;alpha2Code;name');
+                                        $obj = json_decode($json);
+                                        // var_dump($obj[0]);
+                                        for ($i = 0; $i < count($obj); $i++) {
+                                            echo "<option value={$obj[$i]->alpha2Code}>{$obj[$i]->translations->fr}</option>";
+                                        }
                                         ?>
                                     </select>
                                 </div>
