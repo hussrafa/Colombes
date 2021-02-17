@@ -42,8 +42,16 @@ $res = mysqli_query($conn, $qryToExecute);
             <hr class="my-4">
             <p>Cliquer sur le buton ci-dessous pour accéder au back-office(user et mot de passe requis):</p>
             <div class="row">
-                <button class="btn btn-success btn-lg m-1" href="login.php" role="button" data-toggle="modal" data-target="#ModelLogin">Connexion</button>
-                <button class="btn btn-secondary btn-lg m-1" data-toggle="modal" data-target="#staticBackdrop" role="button">Register</button>
+                <?php
+                session_start();
+
+                if (!isset($_SESSION["connected"])) {
+                    echo '<button class="btn btn-success btn-lg m-1" href="login.php" role="button" data-toggle="modal" data-target="#ModelLogin">Connexion</button>';
+                    echo '<button class="btn btn-secondary btn-lg m-1" data-toggle="modal" data-target="#staticBackdrop" role="button">Register</button>';
+                }
+                if (isset($_SESSION["connected"]) && $_SESSION["connected"] === true)
+                    echo '<a class="btn btn-danger btn-lg m-1" href="logout.php" role="button">Logout</a>';
+                ?>
             </div>
         </div>
         <?php

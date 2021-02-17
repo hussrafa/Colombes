@@ -27,12 +27,19 @@ try {
     $conn = new PDO($pdo, DB_USERNAME, DB_PASSWORD);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-    $sql = "select 1 from users where mail=? and pass=?";
+    $sql = "select fname from users where mail=? and pass=?";
     $qry = $conn->prepare($sql);
     $val = [$crypteedmail, $cryptedpwd];
     $qry->execute($val);
     //3a. Si utilisateur reconnu alors router vers bo.php
     if ($qry->rowCount() > 0) {
+        //demarre  une session
+        $row=$qry->fetch();
+        session_start();
+        $_SESSION["connected"]=true;
+        $_SESSION["session_id"]=session_id();
+        $_SESSION["fname"]=$row["fname"];
+        $_SESSION["mail"]=$_POST["mailogin"];       
         header('location:bo.php');
     }
     //3b. sinon router vers index.php avec variable dans

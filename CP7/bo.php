@@ -17,6 +17,11 @@
     <div class="container">
         <div class="d-flex ml-5 mt-5" style="flex-wrap: wrap">
             <?php
+            session_start();
+            if (!isset($_SESSION["connected"]) && !$_SESSION["connected"]) {
+                header('location:index.php');
+                exit();
+            }
             include_once('config.php');
             try {
                 $pdo = "mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME . "";
@@ -50,7 +55,7 @@
     </div>
 </body>
 <style>
-   
+
 </style>
 
 </html>
