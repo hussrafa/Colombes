@@ -21,6 +21,7 @@ $res = mysqli_query($conn, $qryToExecute);
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -41,21 +42,41 @@ $res = mysqli_query($conn, $qryToExecute);
             <hr class="my-4">
             <p>Cliquer sur le buton ci-dessous pour accéder au back-office(user et mot de passe requis):</p>
             <div class="row">
-                <a class="btn btn-success btn-lg m-1" href="login.php" role="button">Connexion</a>
+                <button class="btn btn-success btn-lg m-1" href="login.php" role="button" data-toggle="modal" data-target="#ModelLogin">Connexion</button>
                 <button class="btn btn-secondary btn-lg m-1" data-toggle="modal" data-target="#staticBackdrop" role="button">Register</button>
             </div>
-
         </div>
+        <?php
+        if ((isset($_GET["key"]) && !empty($_GET["key"])) && (isset($_GET["user"]) && !empty($_GET["user"]))) {
+            if (strtolower($_GET["key"]) === "created") {
+                echo  '<div class="alert alert-success alert-dismissible fade show m15" role="alert">
+                           <strong>Hey ' . $_GET["user"] . '!</strong> Your account has been created. Please verify your email for instructions.
+                           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                           </div>';
+            }
+        }
+        if ((isset($_GET["lg"]) && !empty($_GET["lg"]))) {
+            if (strtolower($_GET["lg"]) === "failed") {
+                echo  '<div class="alert alert-danger alert-dismissible fade show m15" role="alert">
+                <strong>Please verify your mail and password. Login failed</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div>';
+            }
+        }
+
+        ?>
         <?php include_once("menu.php"); ?>
         <h2>Members d'équipe</h2>
         <section id="team">
             <?php
             include_once("team.php");
-
             echo "<div class='d-flex ml-5' style='flex-wrap: wrap;'>";
             $color = "";
             $maried = "";
-
             for ($i = 0; $i < count($members); $i++) {
                 $color = $members[$i][2] == "F" ? "girl" : "boy";
                 echo "<div class='mt-2 mr-2'>";
@@ -97,7 +118,7 @@ $res = mysqli_query($conn, $qryToExecute);
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header center">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Subscription</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -141,32 +162,57 @@ $res = mysqli_query($conn, $qryToExecute);
                                 <input type="submit" value="submit" class="btn btn-primary">
                             </div>
                         </form>
-
                     </div>
-
                 </div>
             </div>
         </div>
 
-
-
-
-
+        <!--Model connexion-->
+        <div class="modal fade" id="ModelLogin" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header center">
+                        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="login.php" method="post" enctype="multipart/form-data">
+                            <div class="container">
+                                <div class="form-group">
+                                    <label for="mail">Mail : </label>
+                                    <input type="email" name="mailogin" id="mailogin" placeholder="eMail" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Password : </label>
+                                    <input type="password" name="pwdlogin" id="pwdlogin" placeholder="Password" class="form-control" pattern="[A-Za-z0-9@$*!?]{8,}" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <input type="submit" value="submit" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
 </body>
 
 </html>
-
 <style>
     .myClass {
         margin: 10px;
-
     }
 
     .center {
         text-align: center;
+    }
+
+    .m15 {
+        /* margin-left: -15px;*/
+        margin-top: 15px;
     }
 </style>

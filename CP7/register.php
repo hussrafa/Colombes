@@ -51,7 +51,7 @@ if ($nb === 1) {
       $html .= '<body><h1>Inscription Northwind Traders</h1>';
       $html .= '<p>Bonjour ' . $_POST['fname'] . ' et bienvenu(e) sur notre site.';
       $link = 'http://' . $_SERVER['HTTP_HOST'] . '/colombes/cp7/register2.php?m=' . $mail;
-      $html .= '<p>Clique sur le lien suivant pour valider ton inscription : <a href='.urldecode($link).'>' . urldecode($link) . '</a>';
+      $html .= '<p>Clique sur le lien suivant pour valider ton inscription : <a href=' . urldecode($link) . '>' . urldecode($link) . '</a>';
       $html .= '<p>A très bientôt</body></html>';
       // En-tête du mail
       $header = "MIME-Version: 1.0 \n"; // Version MIME
@@ -64,6 +64,7 @@ if ($nb === 1) {
       // Envoi du mail
       $res2 = mail($_POST['mail'], $subject, ($html), $header);
       echo ($res2 ? 'Succès' : 'Echec');
+      header('location:index.php?key=created&user=' . $_POST["fname"] . '');
     } else {
       echo 'Echec dans l\'ajout du user.';
     }

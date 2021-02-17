@@ -20,7 +20,7 @@
 
         include_once('constants.php');
         $Inbox = imap_open(MB_HOST, MB_USER, MB_PASS) or die('<div class="alert alert-danger">Connexion au serveur de messagerie impossible : ' . imap_last_error() . '</div>');
-        echo imap_utf8(imap_qprint(imap_fetchbody($Inbox, $id, 1)));
+        echo (quoted_printable_decode(imap_fetchbody($Inbox, $id, 1)));
         imap_close($Inbox);
         ?>
     </div>
