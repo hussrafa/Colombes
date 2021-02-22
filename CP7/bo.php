@@ -41,7 +41,7 @@
                               <h5 class="card-title">' . $ligne['TABLE_NAME'] . '</h5>
                               <p class="card-text">Primary Key: ' . $ligne["COLUMN_NAME"] . '</p>
                               <p class="card-text">Nombre de lignes : ' . $ligne["TABLE_ROWS"] . '</p>
-                              <a href="lists.php?pg=' . $ligne['TABLE_NAME'] . '&pk=' . $ligne["COLUMN_NAME"] . '" class="btn btn-primary">Details</a>
+                              <a href="lists.php?t=' . $ligne['TABLE_NAME'] . '&k=' . $ligne["COLUMN_NAME"] . '" class="btn btn-primary">Details</a>
                               </div>
                               </div>';
                 }
