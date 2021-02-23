@@ -53,9 +53,10 @@ if (isset($_GET['nb']) && !empty($_GET['nb'])) {
     echo '<h1>Base de données : ' . DB . '</h1>';
     echo '<h2>Table : ' . $t . '</h2>';
     echo '<div style="text-align:right;"><a class="btn btn-success m-1" href="edit.php?t=' . $t . '&k=' . $k . '&id=">Add</a>';
-    echo '<a class="btn btn-danger m-1" href="export_pdf?t=' . $t . '">Export pdf </a> ';
-    echo '<a class="btn btn-secondary m-1" href="export_csv?t=' . $t . '">Export CSV </a> ';
-    echo '<a class="btn btn-info m-1" href="export_xml?t=' . $t . '">Export XML </a> ';
+    echo '<a class="btn btn-danger m-1" href="export_pdf.php?t=' . $t . '">Export pdf </a> ';
+    echo '<a class="btn btn-secondary m-1" href="export_csv.php?t=' . $t . '">Export CSV </a> ';
+    echo '<a class="btn btn-info m-1" href="export_xml.php?t=' . $t . '">Export XML </a> ';
+    echo '<a class="btn btn-primary m-1" href="export_json.php?t=' . $t . '">Export JSON </a> ';
     echo '</div>';
     // Exécute et lit la requête
     try {
