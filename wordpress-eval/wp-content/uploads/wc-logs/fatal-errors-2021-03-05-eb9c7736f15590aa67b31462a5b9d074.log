@@ -1,0 +1,9 @@
+2021-03-05T10:07:14+00:00 CRITICAL Uncaught Error: Class 'Automattic\WooCommerce\Admin\API\OnboardingPlugins' not found in /var/www/html/Colombes/wordpress-eval/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/InstallJPAndWCSPlugins.php:114
+Stack trace:
+#0 /var/www/html/Colombes/wordpress-eval/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/InstallJPAndWCSPlugins.php(103): Automattic\WooCommerce\Admin\Notes\InstallJPAndWCSPlugins->install_and_activate_plugin()
+#1 /var/www/html/Colombes/wordpress-eval/wp-includes/class-wp-hook.php(287): Automattic\WooCommerce\Admin\Notes\InstallJPAndWCSPlugins->install_jp_and_wcs_plugins()
+#2 /var/www/html/Colombes/wordpress-eval/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#3 /var/www/html/Colombes/wordpress-eval/wp-includes/plugin.php(478): WP_Hook->do_action()
+#4 /var/www/html/Colombes/wordpress-eval/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/Notes.php(346): do_action()
+#5 /var/www/html/Colombes/wordpress-eval/wp-content/plugins/ in /var/www/html/Colombes/wordpress-eval/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/InstallJPAndWCSPlugins.php on line 114
+
